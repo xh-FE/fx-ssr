@@ -8,7 +8,14 @@
 
 <script>
 export default {
-  props: ['error'],
+  props: {
+    error: {
+      type: Object,
+      default() {
+        return {}
+      }
+    }
+  },
   layout: 'blog' // 你可以为错误页面指定自定义的布局
 }
 </script>

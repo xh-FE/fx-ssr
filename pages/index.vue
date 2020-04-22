@@ -1,13 +1,12 @@
 <template>
   <div class="container">
-    <div v-for="(item, i) in list" :key="i" style="margin: 20px">
+    <!-- <div v-for="(item, i) in list" :key="i" style="margin: 20px">
       {{ item }}
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script>
-import { getPostList } from '../api/posts'
 export default {
   components: {},
   fetch() {
@@ -15,11 +14,11 @@ export default {
   },
   async asyncData({ req, res, error }) {
     // console.log(req, res)
-    const [err, data] = await getPostList()
-    if (err) return {}
-    return {
-      list: data.data
-    }
+    // const [err, data] = await getPostList()
+    // if (err) return {}
+    // return {
+    //   list: data.data
+    // }
     // error({ statusCode: 404 })
   },
   head() {

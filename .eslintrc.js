@@ -7,6 +7,14 @@ module.exports = {
   parserOptions: {
     parser: 'babel-eslint'
   },
+  globals: {
+    // 这里填入你的项目需要的全局变量
+    // false 表示这个全局变量不允许被重新赋值，比如：
+    // myGlobal: false
+    FEENV: false,
+    window: false,
+    wx: false // 全局微信变量
+  },
   extends: [
     '@nuxtjs',
     'prettier',
@@ -19,5 +27,6 @@ module.exports = {
   ],
   // add your custom rules here
   rules: {
+    'prefer-promise-reject-errors': 0
   }
 }
