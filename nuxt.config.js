@@ -31,7 +31,24 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['~/plugins/vant.js', '~/plugins/common.js', '~/plugins/wx.js'],
+  plugins: [
+    {
+      src: '~/plugins/vant.js',
+      ssr: false
+    },
+    {
+      src: '~/plugins/common.js',
+      ssr: false
+    },
+    {
+      src: '~/plugins/wx.js',
+      ssr: false
+    },
+    {
+      src: '~/plugins/ua.js',
+      ssr: false
+    }
+  ],
   /*
    ** Nuxt.js dev-modules
    */

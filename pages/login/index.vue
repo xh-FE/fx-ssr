@@ -110,9 +110,7 @@ export default {
       this.showCountDown = false
     },
     fnBsnScrollToTop() {
-      if (process.client) {
-        window.scrollTo(0, 0)
-      }
+      window.scrollTo(0, 0)
     },
     // 登录
     async fnClickLogin() {

@@ -5,7 +5,7 @@ import ua from '@/utils/ua'
 
 // 插件形式
 const useComponentList = [vueBaberrage]
-// 组件性格是
+// 组件形式
 const componentList = [TimeTick]
 
 useComponentList.forEach((component) => {
