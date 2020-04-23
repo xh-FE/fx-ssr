@@ -5,11 +5,7 @@ export const setCookie = function(name, value, expires) {
   if (oDate) {
     oDate.setTime(oDate.getTime() + expires * 1000)
   }
-  document.cookie = [
-    name + '=' + decodeURIComponent(value),
-    expires ? `expires=${oDate.toGMTString()}` : '',
-    'path=/'
-  ].join('; ')
+  document.cookie = [name + '=' + decodeURIComponent(value), expires ? `expires=${oDate.toGMTString()}` : '', 'path=/'].join('; ')
 }
 
 // 获取cookie

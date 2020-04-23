@@ -39,15 +39,7 @@ import SubscribeDialog from '../../components/SubscribeDialog'
 // import SwipeTip from '../../components/SwipeTip'
 // import ClauseDialog from '../../components/ClauseDialog'
 // 预约-手工填单
-import {
-  getUserInfoWithToken,
-  subscribeInfo,
-  refreshToken,
-  getWxUserInfo,
-  subscribeList,
-  loginWithFosunToken,
-  subscribeActive
-} from '../../api'
+import { getUserInfoWithToken, subscribeInfo, refreshToken, getWxUserInfo, subscribeList, loginWithFosunToken, subscribeActive } from '../../api'
 
 import { share } from '../../plugins/wx'
 import SubscribeLogin from '../../components/Subscribe/Login'
@@ -184,10 +176,7 @@ export default {
           // 如果登录过
           this.fnBsnGetUserInfo()
         }
-        if (
-          parseCookie.tokenInfo &&
-          parseCookie.tokenInfo.loginType === 'WX_ACCCOUNT_LOGIN'
-        ) {
+        if (parseCookie.tokenInfo && parseCookie.tokenInfo.loginType === 'WX_ACCCOUNT_LOGIN') {
           this.fnBsnGetUserInfo()
           this.$store.commit('user/updateLoginStatus', true)
           this.$store.commit('user/updateBindWxType', true)

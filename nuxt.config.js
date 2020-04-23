@@ -63,12 +63,17 @@ export default {
    */
   modules: ['@nuxtjs/proxy'],
   proxy: {
-    '/user': {
+    '/^user': {
       target: 'https://api.fostars.top'
+    },
+    '/^api': {
+      target: 'https://cnodejs.org',
+      changeOrigin: true
     }
   },
   axios: {
-    // proxyHeaders: false
+    proxy: true,
+    proxyHeaders: true
   },
   /*
    ** Build configuration

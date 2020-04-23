@@ -92,8 +92,8 @@ module.exports = function(sSource) {
   )
 
   // 输出 debug 数据
-  this.query.debug && console.log('\n文件：', this.resourcePath, this.query)
-  this.query.debug && console.log('desktop 类名：', aDesktopClassName)
+  // this.query.debug && console.log('\n文件：', this.resourcePath, this.query)
+  // this.query.debug && console.log('desktop 类名：', aDesktopClassName)
 
   // 原子类样式接收数组
   const aDesktopStyle = []
@@ -109,7 +109,7 @@ module.exports = function(sSource) {
   })
 
   // 输出 debug 数据
-  this.query.debug && console.log('desktop 样式：', aDesktopStyle)
+  // this.query.debug && console.log('desktop 样式：', aDesktopStyle)
 
   return `${sSource}\n<style>\n${aDesktopStyle.join('')}</style>\n`
 }

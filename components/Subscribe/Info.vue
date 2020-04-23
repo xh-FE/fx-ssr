@@ -117,11 +117,7 @@ export default {
   border-radius: 20px;
 }
 .btn {
-  background: linear-gradient(
-    8deg,
-    rgba(255, 156, 0, 1) 0%,
-    rgba(255, 210, 0, 1) 100%
-  );
+  background: linear-gradient(8deg, rgba(255, 156, 0, 1) 0%, rgba(255, 210, 0, 1) 100%);
   box-shadow: 0px 7px 10px 0px rgba(193, 0, 109, 0.35);
   border-radius: 45px;
 }

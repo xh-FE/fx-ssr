@@ -1,5 +1,4 @@
-/* * 条款弹框 * @Author: liujianhui * @Date: 2020-04-13 13:41:45 * @Last
-Modified by: jianhui */
+/* * 条款弹框 * @Author: liujianhui * @Date: 2020-04-13 13:41:45 * @Last Modified by: jianhui */
 
 <template lang="pug">
 div

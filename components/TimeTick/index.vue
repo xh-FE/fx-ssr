@@ -49,12 +49,7 @@ export default {
         timerTick.tick(({ timeInfo }) => {
           this.$emit('tick', timeInfo)
           this.timeInfo = timeInfo
-          if (
-            timeInfo.d === undefined &&
-            timeInfo.h === undefined &&
-            timeInfo.m === undefined &&
-            timeInfo.s === undefined
-          ) {
+          if (timeInfo.d === undefined && timeInfo.h === undefined && timeInfo.m === undefined && timeInfo.s === undefined) {
             this.$emit('onEnd', timeInfo)
           }
         })

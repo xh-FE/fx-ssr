@@ -2,7 +2,7 @@ import axios from 'axios'
 import { awaitWrap } from '~/utils'
 
 const myAxios = axios.create({
-  // baseURL: 'https://www.fostarts.top',
+  baseURL: 'https://cnodejs.org',
   timeout: 4000,
   headers: {}
 })
